@@ -1,0 +1,16 @@
+import java.util.Random;
+
+public abstract class Ejercicio1 {
+
+	public static void main(String[] args) {
+		while(true) {
+			int numeros[] = new int[100];
+			//Generar numeros aleatorios entre 0 y 100
+			Random rand = new Random();
+			int intRandom = rand.nextInt(101); 
+			//Mostrar menu por pantalla
+			System.out.println(intRandom);	
+		}
+	}
+
+}

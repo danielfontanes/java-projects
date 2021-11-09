@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Extra3 {
+
+	public static void main(String[] args) {
+		//CADENA PALÍNDROMA
+		Scanner lector = new Scanner();
+		
+		while(true){
+			//Pedir introducir frase
+			
+			//Splitear frase
+			
+			//Buscar en cada palabra si se dice lo mismo al principio que al reves
+			
+		}
+
+	}
+
+}

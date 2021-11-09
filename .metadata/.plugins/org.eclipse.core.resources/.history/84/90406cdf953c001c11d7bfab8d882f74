@@ -1,0 +1,24 @@
+import java.util.Arrays;
+
+public class Extra1 {
+
+	public static void main(String[] args) {
+		//HUNDIR LA FLOTA
+		while(true) {
+			//Declaramos la matriz multidimensional
+			byte map [][] = new byte [8][8];
+			//Lleno de ceros la matriz
+			for (int i = 0; i < map.length; i++) {
+				for (int j = 0; j < map[i].length; j++) {
+					map[i][i]= 0;
+				}
+			}
+			//Muestro la matriz para comprobar que esta llena de ceros
+			for (int i = 0; i < map.length; i++) {
+				Arrays.toString(map[i]);
+			}
+		}
+
+	}
+
+}

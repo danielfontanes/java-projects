@@ -1,0 +1,50 @@
+import java.util.Arrays;
+import java.util.Random;
+
+public class Extra1 {
+
+	public static void main(String[] args) {
+		//HUNDIR LA FLOTA
+		byte map [][] = new byte [8][8];
+		//Matriz que utilizo para que el usuario vea donde ya impacto contra el barco
+		byte mapUser [][] = new byte [8][8];
+		
+		Random rand = new Random();
+		int randomRow = 0;
+		int randomColum = 0;
+		int count = 0;
+	
+		
+		while(true) {
+			//Declaramos la matriz multidimensional
+			
+			//Lleno de ceros la matriz
+			for (int i = 0; i < map.length; i++) {
+				for (int j = 0; j < map[i].length; j++) {
+					map[i][i]= 0;
+				}
+			}
+			//Añado los barcos
+			while(contador < 11) {
+				randomRow = rand.nextInt(map.length -2);
+				randomColum = rand.nextInt(map.length -2);
+				if(map[randomRow][randomColum] == 0) {
+					map[randomRow][randomColum] = 1;
+					contador++;
+				}
+			}
+			contador= 0;
+			 
+			 
+			
+			
+			//Muestro la matriz para comprobar que esta llena de ceros
+			for (int i = 0; i < map.length; i++) {
+				System.out.println(Arrays.toString(map[i]));
+			}
+			break;
+		}
+
+	}
+
+}

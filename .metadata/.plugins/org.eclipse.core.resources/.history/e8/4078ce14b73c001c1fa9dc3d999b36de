@@ -1,0 +1,12 @@
+
+public class Extra2 {
+
+	public static void main(String[] args) {
+		//EL JUEGO DEL AHORCADO
+		String palabras [] = new String [];
+		
+		
+
+	}
+
+}

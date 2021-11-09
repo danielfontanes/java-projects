@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Extra3 {
+
+	public static void main(String[] args) {
+		//CADENA PALÍNDROMA
+		Scanner lector = new Scanner(System.in);
+		String frase;
+		boolean noPalindroma = false;
+		
+		while(true){
+			//Pedir introducir frase
+			System.out.println("Introduza frase:");
+			frase = lector.nextLine();
+			//Splitear frase
+			String fraseTroceada []= frase.split(" ");
+			for (int i = 0; i < fraseTroceada.length; i++) {
+				String palabraTroceada []= fraseTroceada[i].split("");
+				for (int j = 0; j < palabraTroceada.length/2; j++) {
+					if(palabraTroceada[i].equals(palabraTroceada[palabraTroceada.length -i -1])){
+					}
+					else {
+						noPalindroma= true;
+						break;
+						
+					}
+				}
+				if(noPalindroma) {
+					System.out.println(fraseTroceada[i] + " No es palindroma");
+				}
+				else {
+					System.out.println(fraseTroceada[i] + " Es palindroma");
+				}
+			}
+			//Buscar en cada palabra si se dice lo mismo al principio que al reves
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,34 @@
+import java.util.Arrays;
+import java.util.Random;
+
+public class Extra2 {
+
+	public static void main(String[] args) {
+		//EL JUEGO DEL AHORCADO
+		String palabras [] = {"INFORMATICA","COCHE","PERRO","GATO"};
+		Random rand = new Random();
+		String palabraElegida;
+		
+		
+		//Elijo la palabra de la matriz de forma random
+		palabraElegida = palabras[rand.nextInt(palabras.length)];
+		//Divido la palabra en letras
+		System.out.println(palabraElegida);
+		String palabraTroceada []= palabraElegida.split("|");
+		System.out.println(Arrays.toString(palabraTroceada));
+		System.out.println(palabraTroceada[2]);
+		//pinto al usuario un _
+		String palabrasUsuario [] = new String [palabraTroceada.length];
+		for (int i = 0; i < palabrasUsuario.length; i++) {
+			palabrasUsuario[i]="_";
+		}
+		System.out.println(Arrays.toString(palabrasUsuario));
+		//Pregunto al usuario que me diga que letra piensa
+		
+		//Si la letra se encuentra en la matriz de chars las pinto al usuario 
+		
+		
+
+	}
+
+}

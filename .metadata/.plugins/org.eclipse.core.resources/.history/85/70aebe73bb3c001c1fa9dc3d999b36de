@@ -1,0 +1,20 @@
+
+public class Extra2 {
+
+	public static void main(String[] args) {
+		//EL JUEGO DEL AHORCADO
+		String palabras [] = {"informatica","html"};
+		
+		//Elijo la palabra de la matriz de forma random
+		
+		//Divido la palabra en letras
+		
+		//pinto al usuario un _
+		
+		//Si la posicion y la letra coinciden cambio el _ que muestro al usuario por la letra
+		
+		
+
+	}
+
+}
